@@ -1,0 +1,80 @@
+vm+pc=10.11.10.51-10.11.10.55
+vm+cert=10.11.10.56-10.11.10.60
+pc+cert=10.11.10.61-10.11.10.65
+vm+pc+cert=10.11.10.66-10.11.10.70
+vm_only=10.11.10.71-10.11.10.75
+vm_only(network1)=10.11.10.71-10.11.10.75
+
+PC_only=10.11.10.76-10.11.10.80
+cert_only=10.11.10.81-10.11.10.85
+DNS_take_ip=10.11.10.86-10.11.10.90
+VM+SCA=10.11.10.91-10.11.10.95
+
+tag1=10.11.10.96-10.11.10.100
+tag2=10.11.10.98-10.11.10.102
+
+input[class='form-control ng-pristine ng-invalid ng-touched']
+//input[@class='form-control ng-pristine ng-invalid ng-touched']
+name
+
+/html[1]/body[1]/app-root[1]/form-comp[1]/div[1]/form[1]/div[1]/input[1]
+abhijeet/Qatemp123#
+"//input[@class="form-control ng-pristine ng-invalid ng-touched"]"
+
+
+Login:	awaghmare@quickheal
+Password:	istibrov93
+
+
+Login:	awaghmare@qualys
+Password:	S94Ligusta
+
+rahulshettyacademy/learning
+abhijeet/Qatemp123#
+exampleInputPassword1
+
+https://qualysapi.p01.eng.sjc01.qualys.com/api/2.0/fo/knowledge_base/vuln/?code_modified_before=2023-08-08&action=list&code_modified_after=2023-04-26
+
+
+https://qualysapi.p01.eng.sjc01.qualys.com/api/2.0/fo/knowledge_base/vuln/?code_modified_before=2023-08-08&action=list&code_modified_after=2023-07-26
+
+
+
+1468
+
+1466
+
+
+
+https://qualysapi.p01.eng.sjc01.qualys.com/api/2.0/fo/knowledge_base/vuln/?code_modified_before=2023-08-08&action=list&code_modified_after=2023-07-30
+
+qid disable=1169
+
+qid enable= 1171
+
+https://qualysapi.p01.eng.sjc01.qualys.com/api/2.0/fo/knowledge_base/vuln/?code_modified_before=2023-08-08&action=list&code_modified_after=2023-08-05
+
+qid enable=476
+qid disable=474
+
+https://qualysapi.p01.eng.sjc01.qualys.com/api/2.0/fo/knowledge_base/vuln/?code_modified_before=2023-08-08&action=list&code_modified_after=2023-08-06
+
+
+- secrets:
+    datasource.password: "Qw{48-8180}-^QaTem!123"
+  secret_path: qdb/qweb_plat
+  mount: database_secret
+- secrets:
+    s3.clients.accesskey: "JMQ4TAD4ABCG61ZE323E"
+    s3.clients.privatekey: "A2ObZelxGnzt6HFYO8htIxNuD4DzkqfsyFBsXhgI"
+  secret_path: vmrs/masif
+  mount: security_secret
+- secrets:
+    qualys.platformNdsmKey: "d2j[oHgk0okyjoGk"
+    qualys.platformCredKey: "-KnqJHX9R4bo"
+  secret_path: qweb
+  mount: security_secret
+- secrets:
+    spring.cloud.vault.ssl.trust-store-password: "changeit"
+  secret_path: vmrs/ssl
+  mount: security_secret
